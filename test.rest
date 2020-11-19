@@ -1,0 +1,11 @@
+GET http://localhost:8081/persons
+
+###
+
+POST http://localhost:8081/persons
+Content-Type: application/json
+
+{
+  "first_name": "Jason",
+  "last_name": "Ross",
+}
