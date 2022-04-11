@@ -9,6 +9,10 @@ const personSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  handles: {
+    type: Object,
+    required: false,
+  }
 })
 
 module.exports = mongoose.model('Person', personSchema, 'persons')

@@ -1,0 +1,17 @@
+# serverless.yml
+
+service: whattheysaid-api
+
+useDotenv: true
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-2
+  profile: jason-personal
+functions:
+  app:
+    handler: server.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'

@@ -1,0 +1,2 @@
+To deploy, run:
+  sls deploy --profile jason-personal

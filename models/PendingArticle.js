@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const articleSchema = new mongoose.Schema({
+const pendingArticleSchema = new mongoose.Schema({
   type: {
     type: String,
     required: true,
@@ -46,4 +46,4 @@ const articleSchema = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model('Article', articleSchema, 'articles')
+module.exports = mongoose.model('PendingArticle', pendingArticleSchema, 'pendingArticles')
